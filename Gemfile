@@ -52,6 +52,9 @@ group :development do
   gem 'pronto-flay', require: false
   gem 'pronto-rails_best_practices', require: false
   gem 'pronto-rubocop', require: false
+  #gem 'pronto-scss', require: false
+  #gem 'pronto-slim', require: false
+  #gem 'pronto-reek', require: false
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
