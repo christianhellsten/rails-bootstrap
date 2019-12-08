@@ -19,7 +19,9 @@ FileUtils.chdir APP_ROOT do
   system! 'gem install bundler --conservative'
   system! 'brew install cmake' # Required by the rugged gem
   system! 'brew install overmind' # Procfile runner
+  system! 'brew install yarn' # Javascript
   system('bundle check') || system!('bundle install')
+  system! 'yarn' # Javascript deps
 
   # Install JavaScript dependencies
   # system('bin/yarn')
