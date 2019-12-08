@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Install Ruby
 
-Things you may want to cover:
+```bash
+$ brew install rbenv
+$ rbenv install 2.6.3
+$ git clone rails-devise-bootstrap-template
+$ cd rails-devise-bootstrap-template
+$ bin/setup
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```

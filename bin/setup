@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
+
 require 'fileutils'
 
 # path to your application root.
@@ -15,6 +17,8 @@ FileUtils.chdir APP_ROOT do
 
   puts '== Installing dependencies =='
   system! 'gem install bundler --conservative'
+  system! 'brew install cmake' # Required by the rugged gem
+  system! 'brew install overmind' # Procfile runner
   system('bundle check') || system!('bundle install')
 
   # Install JavaScript dependencies
