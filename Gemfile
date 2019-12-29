@@ -24,9 +24,12 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 #
-gem 'bootstrap', '~>4.4.1'
+gem 'pry'
+gem 'devise-i18n' # i18n, must be before devise-bootstrap-views
+gem 'bootstrap', '~>4.4.1' # Bootstrap 4
 gem 'data_migrate' # Migrations for data
 gem 'devise' # Authentication
+gem 'devise-bootstrap-views', '~> 1.0', github: 'christianhellsten/devise-bootstrap-views' # Bootstrap templates for Devise
 gem 'font-awesome-sass', '~> 5.8' # Icons
 gem 'jquery-rails' # Required by bootstrap
 gem 'slim-rails' # Slim views

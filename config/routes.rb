@@ -1,8 +1,15 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  get 'home/index'
+  get 'features', controller: :home, as: :features
+  get 'pricing', controller: :home, as: :pricing
+  get 'about', controller: :home, as: :about
+  get 'tour', controller: :home, as: :tour
+  unauthenticated do
+    root controller: :home, action: :index
+  end
+  authenticated :account do
+    root to: 'dashboard#index', as: :account_root
+  end
   devise_for :accounts
-  root to: 'home#index'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
